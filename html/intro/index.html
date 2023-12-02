@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 
-<html>
-    
-</html>
-
-<body>
-    <h1>Harry</h1>
+<h1>Harry</h1>
     <p>This paragraph is a child of the body element</p>
     <div>
       <p>his paragraph is a child of the div element and a grandchild of the body element</p>
     </div>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
     <table>
-      <!-- Row 1 -->
-      <tr>
-        <th scope="col">Company Name</th>
-        <th scope="col">Number of Items to Ship</th>
-        <th scope="col">Next Action</th>
-      </tr>
+      <thead>
+        <!-- Row 1 -->
+        <tr>
+          <th scope="col">Company Name</th>
+          <th scope="col">Number of Items to Ship</th>
+          <th scope="col">Next Action</th>
+        </tr>
+      </thead>
       <tbody>
         <!-- Row 2 -->
         <tr>
@@ -56,8 +59,13 @@
         <td>1</td>
         <td>Enter Order</td>
       </tr>
+      <tfoot>
+        <td>Total</td>
+        <td>28</td>
+      </tfoot>
     </table>
-</body>
+  </body>
+</html>
 
 <html>
   <body>
