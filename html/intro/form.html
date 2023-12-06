@@ -47,6 +47,24 @@
       <br>
       <input type="radio" id="no" name="cheese" value="no">
       <label for="no">No</label>
+      <br><br>
+      <!-- dropdown list -->
+      <label for="bun">What type of bun would you like?</label><br>
+      <select name="bun" id="bun">
+        <option value="sesame">Sesame</option>
+        <option value="potato">Potato</option>
+        <option value="bagel">Bagel</option>
+      </select>
+      <br><br>
+      <!-- datalist input -->
+      <label for="sauce">What type of sauce would you like?</label>
+      <input type="text" list="sauces" id="sauce" name="sauce">
+
+      <datalist id="sauces">
+        <option value="ketchup">Ketchup</option>
+        <option value="mayo">Mayo</option>
+        <option value="brown">Brown</option>
+      </datalist>
     </form>
   </body>
 </html>
