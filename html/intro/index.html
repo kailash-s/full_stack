@@ -74,9 +74,9 @@
     <h1>Data validation</h1>
     <form action="check.html" method="GET">
       <label for="guess">Enter a number between 1-10:</label>
-      <input type="number" name="guess" id="guess" min="1" max="10" required><br> <!-- min and max -->
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" minlength="3" maxlength="15"><br>
+      <input type="number" name="guess" id="guess" min="1" max="10" required><br><br> <!-- min and max -->
+      <label for="username">Username: </label><span>(Between 3 and 15 characters and no special characters)</span> 
+      <input type="text" id="username" name="username" minlength="3" maxlength="15" pattern="[a-zA-Z0-9]+"><br> <!-- text length and regex -->
       <input type="submit" id="submission">
     </form>
   </body>
