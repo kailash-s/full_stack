@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 
-<h1>Harry</h1>
-    <p>This paragraph is a child of the body element</p>
-    <div>
-      <p>his paragraph is a child of the div element and a grandchild of the body element</p>
-    </div>
-
 <html>
+  <h1>Harry</h1>
+  <p>This paragraph is a child of the body element</p>
+  <div>
+    <p>This paragraph is a child of the div element and a grandchild of the body element</p>
+  </div>
+
+  <body>
+    <h1>Whitespace</h1>
+    <p> Whitespace and indentation make html documents easier to read</p>
+  </body>
+  <br>
   <head>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -64,12 +69,15 @@
         <td>28</td>
       </tfoot>
     </table>
-  </body>
-</html>
 
-<html>
-  <body>
-    <h1>Whitespace</h1>
-    <p> Whitespace and indentation make html documents easier to read</p>
+    <!-- data validation -->
+    <h1>Data validation</h1>
+    <form action="check.html" method="GET">
+      <label for="guess">Enter a number between 1-10:</label>
+      <input type="number" name="guess" id="guess" min="1" max="10" required><br> <!-- min and max -->
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" minlength="3" maxlength="15"><br>
+      <input type="submit" id="submission">
+    </form>
   </body>
 </html>
