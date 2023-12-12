@@ -5,12 +5,12 @@
   <p>This paragraph is a child of the body element</p>
   <div>
     <p>This paragraph is a child of the div element and a grandchild of the body element</p>
-  </div>
+  </div><hr>
 
   <body>
     <h1>Whitespace</h1>
     <p> Whitespace and indentation make html documents easier to read</p>
-  </body>
+  </body><hr>
   <br>
   <head>
     <link rel="stylesheet" href="style.css">
@@ -68,7 +68,7 @@
         <td>Total</td>
         <td>28</td>
       </tfoot>
-    </table>
+    </table><hr>
 
     <!-- data validation -->
     <h1>Data validation</h1>
@@ -78,7 +78,7 @@
       <label for="username">Username: </label><span>(Between 3 and 15 characters and no special characters)</span> 
       <input type="text" id="username" name="username" minlength="3" maxlength="15" pattern="[a-zA-Z0-9]+"><br> <!-- text length and regex -->
       <input type="submit" id="submission">
-    </form>
+    </form><hr>
 
     <!-- semantic html -->
     <header>
@@ -100,7 +100,16 @@
             Dogs have a sense of time. It's been proven that they know the difference between a hour and five. If conditioned to, they can predict future events, such as regular walk times.
           </p>
       </article>
+      <aside>
+        <p>
+          A study was conducted on dogs being away from their owners for varying hours and the studies show that dogs who were away from their owners the longest showed the greatest amount of affection!
+        </p>
+      </aside>
       </section>
+      <figure>
+        <img src="https://content.codecademy.com/courses/SemanticHTML/dogimage.jpeg" alt="">
+        <figcaption>Dog with light shining on it</figcaption>
+      </figure>
     </main>
     <footer>
       <p>Contact me at +1 234 567 8910 </p>

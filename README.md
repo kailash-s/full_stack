@@ -8,4 +8,4 @@ Content to be learned and added:
 2. Javascript
 3. React
 4. Ruby on Rails
-And more to come!
+5. And more to come!
