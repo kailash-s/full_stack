@@ -10,15 +10,16 @@
   <body>
     <!-- header to show purpose of webpage -->
     <header>
-      <h1>HTML Intro put into practice!</h1><hr>
+      <h1 id="top">HTML Intro put into practice!</h1><hr>
       <h1>One Piece</h1>
       <nav>
-        <!-- a tag needed for better navigation -->
+        <!-- a tags added for better navigation -->
         <ul>
-          <li>Introduction</li>
-          <li>Straw Hats</li>
-          <li>Theories</li>
-          <li>Quiz</li>
+          <li><a href="#intro">Introduction</a></li>
+          <li><a href="#straw_hats">Straw Hats</a></li>
+          <li><a href="#theories">Theories</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#references">References</a></li>
         </ul>
       </nav>
     </header>
@@ -26,7 +27,7 @@
     <main>
       <!-- section used to show different areas of the topic -->
       <section>
-        <h2>Introduction</h2>
+        <h2 id="intro">Introduction</h2>
         <!-- figure and figcaption added for logo -->
         <figure>
           <img src="/full_stack/html/project/images/one_piece_logo.png" alt="one_piece_logo" height="100" width="300">
@@ -36,7 +37,7 @@
       </section>
       <section>
         <!-- figure and img added for crew -->
-        <h2>Straw Hats</h2>
+        <h2 id="straw_hats">Straw Hats</h2>
         <figure>
           <img src="/full_stack/html/project/images/straw_hat_crew.png" alt="straw_hat_crew">
           <figcaption>Straw Hat Crew</figcaption>
@@ -47,9 +48,9 @@
           <thead>
             <tr>
               <th></th>
-              <th>Name</th>
-              <th>Role</th>
-              <th>Description</th>
+              <th scope="col">Name</th>
+              <th scope="col">Role</th>
+              <th scope="col">Description</th>
             </tr>
           </thead>
           <tbody>
@@ -154,14 +155,18 @@
               <td>"Knight of the Sea" Jinbe is the helmsman of the Straw Hat Pirates and one of the Senior Officers of the Straw Hat Grand Fleet. He is the tenth member of the crew and the ninth to join, doing so during the Wano Country Arc</td>
             </tr>
           </tbody>
+          <tfoot>
+            <td>Total:</td>
+            <td colspan="3">10 members</td>
+          </tfoot>
         </table>
       </section>
       <section>
         <!-- table needed to show differnt theories -->
-        <h2>Theories</h2>
+        <h2 id="theories">Theories</h2>
       </section>
       <section>
-        <h2>Quiz</h2>
+        <h2 id="quiz">Quiz</h2>
         <!-- form needed for quiz -->
       </section>
       <article></article>
@@ -170,7 +175,7 @@
     </main>
     <!-- footer added to show references -->
     <footer>
-      <h2>References</h2>
+      <h2 id="references">References</h2>
       <ul>
         <li><a href="https://en.wikipedia.org/wiki/One_Piece" target="_blank">One Piece Wikipedia</a></li>
         <li><a href="https://onepiece.fandom.com/wiki/One_Piece_Wiki" target="_blank">One Piece Fan Wikia</a></li>
@@ -178,6 +183,7 @@
         <li><a href="https://en.wikipedia.org/wiki/List_of_One_Piece_characters" target="_blank">Straw hat crew image</a></li>
         <li><a href="https://onepiece.fandom.com/wiki/Straw_Hat_Pirates#Crew_Members" target="_blank">Straw hat crew Wikia</a></li>
       </ul>
+      <a href="#top"><p>Back to top</p></a>
     </footer>
   </body>
 </html>
