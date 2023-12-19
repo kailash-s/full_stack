@@ -192,8 +192,40 @@
       <section>
         <h2 id="quiz">Quiz</h2>
         <!-- form needed for quiz -->
+        <form action="/practice.html" method="POST">
+          <h3>Test your One Piece Knowledge!</h3>
+          <!-- number input -->
+          <label for="blackbeard">1. How many devil fruits does Blackbeard have currently?</label><br>
+          <input type="number" id="blackbeard" name="blackbeard" step="1" min="0">
+          <!-- checkbox input -->
+          <p>2. Which of these characters are part of the Straw Hat crew?</p>
+          <input type="checkbox" id="zoro" name="crew" value="zoro">
+          <label for="zoro">Roronoa Zoro</label><br>
+          <input type="checkbox" id="hancock" name="crew" value="hancock">
+          <label for="hancock">Boa Hancock</label><br>
+          <input type="checkbox" id="pedro" name="crew" value="pedro">
+          <label for="pedro">Pedro</label><br>
+          <input type="checkbox" id="usopp" name="crew" value="usopp">
+          <label for="usopp">Usopp</label><br>
+          <input type="checkbox" id="bartolomeo" name="crew" value="bartolomeo">
+          <label for="bartolomeo">Bartolomeo</label>
+          <!-- radio button input -->
+          <p>3. Luffy is Roger's son</p>
+          <input type="radio" id="true" value="true" name="son">
+          <label for="true">True</label><br>
+          <input type="radio" name="son" id="false" value="false">
+          <label for="false">False</label><br><br>
+          <!-- dropdown list input -->
+          <label for="franky">4. After which arc did Franky join?</label><br>
+          <select name="franky" id="franky">
+            <option value="arabasta">Arabasta Arc</option>
+            <option value="ennies-lobby">Ennies Lobby Arc</option>
+            <option value="thriller-bark">Thriller Bark Arc</option>
+            <option value="drum-island">Drum Island Arc</option>
+          </select>
+          <!-- datalist input -->
+        </form>
       </section>
-      <article></article>
       <aside></aside>
       <!-- look into how to use article and aside tags for this webpage -->
     </main>
@@ -206,6 +238,7 @@
         <li><a href="https://www.deviantart.com/zerocustom1989/art/One-Piece-Logo-83070601" target="_blank">One Piece logo</a></li>
         <li><a href="https://en.wikipedia.org/wiki/List_of_One_Piece_characters" target="_blank">Straw hat crew image</a></li>
         <li><a href="https://onepiece.fandom.com/wiki/Straw_Hat_Pirates#Crew_Members" target="_blank">Straw hat crew Wikia</a></li>
+        <li><a href="https://www.watchmojo.com/articles/top-10-one-piece-fan-theories-that-could-be-true" target="_blank">One Piece Theories</a></li>
       </ul>
       <a href="#top">Back to top</a>
     </footer>
