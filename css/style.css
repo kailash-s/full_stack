@@ -1,7 +1,17 @@
+/* universal selector */
+* {
+  border: 1px solid red;
+}
+
 p {
     color: green;
-  }
+}
 
-  h1 {
-    color: maroon;
-  }
+h1 {
+  color: maroon;
+}
+
+/* class selector */
+.title {
+  color: teal;
+}
