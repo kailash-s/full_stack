@@ -67,3 +67,21 @@ h5 {
 h2.destination {
   font-family: Tahoma;
 }
+
+/* descendant combinator */
+.description h5 {
+  color: blueviolet;
+}
+
+li h4 {
+  color: gold;
+}
+
+h4 {
+  color: dodgerblue;
+}
+
+/* multiple selectors */
+h5, li {
+  font-family: monospace;
+}
