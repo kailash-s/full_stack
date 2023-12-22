@@ -20,9 +20,17 @@ h1 {
   text-transform: uppercase;
 }
 
+.heading-background {
+  background-color: aqua;
+}
+
 /* id selector */
 #article-title {
   font-family: cursive;
+}
+
+#publish-time {
+  color: grey;
 }
 
 /* attribute selector */
@@ -41,4 +49,21 @@ a[href*='seoul'] {
 /* pseudo-class */
 a:hover {
   color: darkorange;
+}
+
+h5 {
+  color: yellow;
+}
+
+.author-class {
+  color: pink;
+}
+
+#author-id {
+  color: cornflowerblue;
+}
+
+/* chaining */
+h2.destination {
+  font-family: Tahoma;
 }
