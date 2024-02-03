@@ -1,9 +1,12 @@
 h1 {
   font-family: Georgia;
+  text-align: center;
+  background-color: aqua;
 }
 
 h2 {
   font-family: Georgia;
+  color: brown;
 }
 
 p {
