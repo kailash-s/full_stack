@@ -1,0 +1,12 @@
+#banner {
+    background-image: url("https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
+    height: 700px;
+}
+
+#banner .content h1 {
+    width: 400px;
+}
+
+.pull-quote {
+    width: 350px;
+}
