@@ -1,12 +1,34 @@
 #banner {
     background-image: url("https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
+    /* height and width is used to change elements' dimentions */
     height: 700px;
 }
 
 #banner .content h1 {
+    /* border surrounds the element */
     width: 400px;
+    border: 3px solid white;
+    /* border raius changes the curvature of the corners */
+    border-radius: 15px;
 }
 
 .pull-quote {
     width: 350px;
+}
+
+h2 {
+    border: 1px dotted red;
+    /* padding is the space between contents in a box and the border */
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navigation li {
+    padding: 20px;
+}
+
+.share a {
+    padding: 14px;
 }
