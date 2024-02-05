@@ -23,6 +23,7 @@ h2 {
     padding-right: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin: 30px 20px;
 }
 
 .navigation li {
@@ -31,4 +32,12 @@ h2 {
 
 .share a {
     padding: 14px;
+    /* margin is the space directly outside the border */
+    margin: 10px;
+}
+
+p {
+    /* padding shorthand allows multiple properties as values in a single declaration */
+    padding: 20px 30px;
+    margin-top: 60px;
 }
