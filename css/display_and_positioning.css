@@ -1,0 +1,9 @@
+.question {
+    /* block-level elements take the full width of their parent element */
+    /* static is default, doesn't need to be stated */
+    /* position: static; */
+    
+    /* relative lets you move from its default position by adding offset properties */
+    position: relative;
+    top: 40px;
+}
