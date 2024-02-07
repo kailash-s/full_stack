@@ -1,9 +1,24 @@
+header {
+    /* absolute allows all other elements to ignore it, it will be positioned to its closest positioned parent element and offset properties can be used */
+    /* position: absolute; */
+
+    /* fixed is used to position an element to a specific part of the page */
+    position: fixed;
+    width: 100%;
+}
+
+.welcome {
+    /* relative lets you move from its default position by adding offset properties */
+    position: relative;
+    top: 200px;
+}
+
 .question {
     /* block-level elements take the full width of their parent element */
     /* static is default, doesn't need to be stated */
     /* position: static; */
     
-    /* relative lets you move from its default position by adding offset properties */
-    position: relative;
-    top: 40px;
+    /* sticky sets the element at a certain point as the page is scrolled with offset properties */
+    position: sticky;
+    top: 300px;
 }
