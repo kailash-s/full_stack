@@ -1,3 +1,11 @@
+* {
+    /* resrtting to default values helpes to work with a clean slate */
+    margin: 0;
+    padding: 0;
+    /* border-box avoids dimensional issues and renders all styling within the property */
+    box-sizing: border-box;
+}
+
 #banner {
     background-image: url("https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
     /* height and width is used to change elements' dimentions */
@@ -14,7 +22,7 @@
 
 .pull-quote {
     width: 350px;
-    /* auto lets your centre the content */
+    /* 0 auto lets your centre the content */
     margin: 0 auto;
 }
 
@@ -55,4 +63,9 @@ p {
     max-width: 800px;
     min-height: 200px;
     max-height: 300px;
+}
+
+.donate {
+    /* visibility allows the choice to display elements or not */
+    visibility: hidden;
 }
