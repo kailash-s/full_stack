@@ -12,7 +12,7 @@ header {
 .welcome {
     /* relative lets you move from its default position by adding offset properties */
     position: relative;
-    top: 200px;
+    top: 50px;
 }
 
 .question {
@@ -23,9 +23,22 @@ header {
     /* sticky sets the element at a certain point as the page is scrolled with offset properties */
     position: sticky;
     top: 300px;
+    /* clear specifies how elements should behave when they bump into each other on the page */
+    clear: left;
 }
 
-/* block-level elements fill the entire width of the page by default like the footer below */
 footer {
     height: 100px;
+}
+
+li {
+    /* inline-block combines inline and block elements they can appear next to each other and we can specify dimensions with height and width */
+    display: inline-block;
+    width: 80px;
+}
+
+.answer {
+    display: inline-block;
+    /* float is used to move elements far left or right as possible with width */
+    float: left;
 }
