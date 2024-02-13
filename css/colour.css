@@ -1,0 +1,28 @@
+h1 {
+    /* color styles the foreground and background-color styles the background */
+    color: midnightblue;
+    background-color: aqua;
+}
+
+.green {
+    /* RGB colors below use decimal numbers representing red, green and blue and can be up to 255 */
+    background-color: rgb(143, 188, 143);
+    /* hexadecimal uses red, blue and green and can be 3 or 6 characters */
+    /* background-color: #8FBC8F; */
+}
+
+.light {
+    background-color: #A0522D;
+}
+
+.city {
+    background-color: #8B4513;
+}
+
+.vienna {
+    background-color: #A52A2A;
+}
+
+.italian {
+    background-color: #000000;
+}
