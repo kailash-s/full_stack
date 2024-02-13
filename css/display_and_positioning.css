@@ -5,6 +5,8 @@ header {
     /* fixed is used to position an element to a specific part of the page */
     position: fixed;
     width: 100%;
+    /* z-index can help layer elements to bring them back and forth */
+    z-index: 10;
 }
 
 .welcome {
@@ -21,4 +23,9 @@ header {
     /* sticky sets the element at a certain point as the page is scrolled with offset properties */
     position: sticky;
     top: 300px;
+}
+
+/* block-level elements fill the entire width of the page by default like the footer below */
+footer {
+    height: 100px;
 }
