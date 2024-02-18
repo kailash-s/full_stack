@@ -26,3 +26,13 @@ h1 {
 .italian {
     background-color: #000000;
 }
+
+.roasting {
+    /* hsl is hue, saturation, and lightness*/
+    background-color: hsl(30, 50%, 25%);
+}
+
+h2 {
+    /* alpha adds opacity to colours */
+    background-color: hsla(270, 50%, 25%, 0.5);
+}
