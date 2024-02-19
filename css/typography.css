@@ -1,4 +1,10 @@
 h1 {
     /* font-family is used to define the font of the text. font stack is used in case the browser can't read the defined font */
     font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-weight controls how bold or thin text appears */
+    font-weight: lighter;
+    /* font-style can be used to make text italic */
+    font-style: italic;
+    /* text-transform allows you to change text to uppercase or lowercase */
+    text-transform: uppercase;
 }
