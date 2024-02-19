@@ -8,3 +8,15 @@ h1 {
     /* text-transform allows you to change text to uppercase or lowercase */
     text-transform: uppercase;
 }
+
+p {
+    /* letter-spacing sets the horizontal spacing between individual characters in an element */
+    letter-spacing: 0.3em;
+    /* word-spacing sets the space inbetween words */
+    word-spacing: 0.25em;
+    /* line-height is used to set how tall each line containing text to be */
+    line-height: 1.4;
+    /* text-aling is used to aling text according to its parent element */
+    text-align: justify;
+    font-family: "Space Mono", monospace;
+}
