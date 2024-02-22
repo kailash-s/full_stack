@@ -11,7 +11,7 @@ console.log('hello'+3);
 // strings also follow order of operations
 console.log('£'+(5+2)); // give £7
 
-// there are 3 ways to make strings; single quotes (''), double quotes ("") and backticks (``) called tenmplate strings
+// there are 3 ways to make strings; single quotes (''), double quotes ("") and backticks (``) called template strings
 console.log('hello');
 console.log("hello");
 console.log(`hello`);
