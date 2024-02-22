@@ -1,15 +1,37 @@
-<style></style>
+<!-- html structure gives access to more html features and nests elements to organise our code -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- css changes the appearance of the website like below -->
+    <style>
+      button {
+        background-color: red;
+        color: white;
+        border: none;
+      }
 
-<!-- html creates the content for the website like below: -->
-<button>hello</button>
-<p>paragraph of text</p>
+      .red-button{
+        background-color: blue; 
+      }
+    </style>
+  </head>
+  <body>
+    <!-- html creates the content for the website like below: -->
+    <button>hello</button>
+    <p>paragraph of text</p>
+    <!-- the above are examples of elements with opening and closing tags -->
 
-<!-- the above are examples of elements with opening and closing tags -->
+    <!-- we can elements within elements like below, this is called nesting -->
+    <p>click <button>here!</button></p>
 
-<!-- we can elements within elements like below, this is called nesting -->
-<p>click <button>here!</button></p>
+    <!-- multispaces and multilines appear as one space on the webpage for better readability of code like below-->
+    <button>
+      hello
+    </button>
 
-<!-- multispaces and multilines appear as one space on the webpage for better readability of code like below-->
-<button>
-    hello
-</button>
+    <!-- attributes change the behaviour of elements and we can specify elements with the class attribute -->
+    <button class="red-button">
+      hello
+    </button>
+  </body>
+</html>
