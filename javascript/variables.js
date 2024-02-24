@@ -20,3 +20,9 @@ console.log(variable1);
 // we can use variables within itself to imcrement the value
 variable1 = variable1+1;
 console.log(variable1);
+
+// we can also create variables in 2 other ways as below:
+// const keeps the variable constant so it can't be changed later
+const variable3 = 3;
+// var used to be used instead of let but has some issues so not used anymore
+var variable4 = 5;
