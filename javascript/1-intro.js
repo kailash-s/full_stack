@@ -8,4 +8,4 @@ console.log(2+2);
 document.body.innerHTML = 'hello';
 
 // syntax is important as the code below will cause an error as it's missing the first bracket
-alert'hello');
+// alert'hello');
