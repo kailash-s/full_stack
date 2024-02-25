@@ -26,3 +26,14 @@ console.log(variable1);
 const variable3 = 3;
 // var used to be used instead of let but has some issues so not used anymore
 var variable4 = 5;
+
+// VARIABLES EXERCISES:
+
+let myName = 'Harry';
+console.log(`My name is ${myName}`);
+let cost = 5+3*2+9;
+console.log(`Cost of food: $${cost}`);
+let tax = cost*0.1;
+console.log(`Tax (10%): £${tax}`);
+let totalCost = cost+tax;
+console.log(`Total cost: £${totalCost}`);
