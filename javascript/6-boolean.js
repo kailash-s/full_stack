@@ -44,5 +44,12 @@ if (age>=16) {
 }
 
 // logical operators allow us to combine booleans
-console.log(true && false); // this will show as true
-console.log(true && false) // this will show as false
+// and operator
+console.log(true && true); // this will show as true
+console.log(true && false); // this will show as false
+
+// or operator
+console.log(true || false); // this will show as true
+
+// not operator
+console.log(!true); // this will show as false
