@@ -76,3 +76,13 @@ console.log('hi'/5); // hi isn't a number
 // underfined
 let hi;
 console.log(hi); // hi doesn't have a value
+
+// ternary operator is like a shortcut to an if else statement
+const results = 0 ? 'truthy' : 'falsy';
+console.log(results);
+
+// guard operator guards the right value if the left value is false like below
+false && console.log('hi'); // hi won't be logged as left side is false
+
+// default operator uses 'or' operator to fall to a defualt if left side is false like below
+const currency = undefined || 'USD'; // this means if currency isn't set, it'll default to USD
