@@ -12,6 +12,14 @@ if (randonNumber>=0 && randonNumber<1/3) {
 console.log(computerMove);
 
 function rockClicked() {
-  const rock = document.getElementById('rock');
-  console.log(rock);
+  const rock = document.getElementById('rock').textContent;
+
+  if (computerMove === 'rock') {
+    result = 'Tie';
+  } else if (computerMove === 'paper') {
+    result = 'You lose';
+  } else if (computerMove === 'scissors') {
+    result = 'You win';
+  }
+  alert(`You picked rock. Computer picked ${computerMove}. ${result}.`)
   }
