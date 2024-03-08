@@ -12,7 +12,6 @@ if (randonNumber>=0 && randonNumber<1/3) {
 console.log(computerMove);
 
 function rockClicked() {
-  const rock = document.getElementById('rock').textContent;
 
   if (computerMove === 'rock') {
     result = 'Tie';
@@ -21,5 +20,29 @@ function rockClicked() {
   } else if (computerMove === 'scissors') {
     result = 'You win';
   }
-  alert(`You picked rock. Computer picked ${computerMove}. ${result}.`)
+  alert(`You picked rock. Computer picked ${computerMove}. ${result}.`);
+  }
+
+function paperClicked() {
+
+  if (computerMove === 'paper') {
+    result = 'Tie';
+  } else if (computerMove === 'scissors') {
+    result = 'You lose';
+  } else if (computerMove === 'rock') {
+    result = 'You win';
+  }
+  alert(`You picked paper. Computer picked ${computerMove}. ${result}.`);
+  }
+
+function scissorsClicked() {
+
+  if (computerMove === 'scissors') {
+    result = 'Tie';
+  } else if (computerMove === 'rock') {
+    result = 'You lose';
+  } else if (computerMove === 'paper') {
+    result = 'You win';
+  }
+  alert(`You picked scissors. Computer picked ${computerMove}. ${result}.`);
   }
