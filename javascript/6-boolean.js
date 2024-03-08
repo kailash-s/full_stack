@@ -26,8 +26,8 @@ if (false) {
 }
 
 // example
-let age = 30
-if (age>=16) {
+let age1 = 30
+if (age1>=16) {
   console.log('You can drive');
 } else {
   console.log('You cant drive');
@@ -53,3 +53,26 @@ console.log(true || false); // this will show as true
 
 // not operator
 console.log(!true); // this will show as false
+
+// truthy and falsy
+// falsy values are false, 0, '', NaN, underfined and null
+if (0) {
+  console.log('hi');
+}
+// ^^^ this won't log anything
+
+const cart = 5;
+if (cart) {
+  console.log('cart has items');
+}
+// ^^^ this will log as 5 is a truthy value
+
+// this also works for logical operators like below
+console.log(!0); // this is now truthy
+
+// NaN = Not a number
+console.log('hi'/5); // hi isn't a number
+
+// underfined
+let hi;
+console.log(hi); // hi doesn't have a value
