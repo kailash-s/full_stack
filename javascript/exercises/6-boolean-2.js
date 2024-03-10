@@ -15,3 +15,11 @@ if (result===guess) {
 } else {
   console.log('You lose');
 }
+
+// 6j
+randonNumber<0.5 ? result='heads' : result='tails';
+
+result===guess ? console.log('You win') : console.log('You lose');
+
+// 6k
+let cartQuantity=0;
