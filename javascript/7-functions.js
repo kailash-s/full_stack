@@ -11,3 +11,11 @@ function function1() {
 // how to run
 console.log(function1());
 function1();
+
+// parameter puts a value into a function
+function calculateTax(parameter1, taxPercent = 0.1) {
+  console.log(parameter1*taxPercent);
+}
+
+calculateTax(2000, 0.2);
+calculateTax(5000);

@@ -13,39 +13,36 @@ function pickComputerMove() {
   return computerMove;
 }
 
-
-function rockClicked() {
+function playGame(playerMove) {
   const computerMove = pickComputerMove();
-  if (computerMove === 'rock') {
-    result = 'Tie';
-  } else if (computerMove === 'paper') {
-    result = 'You lose';
-  } else if (computerMove === 'scissors') {
-    result = 'You win';
-  }
-  alert(`You picked rock. Computer picked ${computerMove}. ${result}.`);
-  }
 
-function paperClicked() {
-  const computerMove = pickComputerMove();
-  if (computerMove === 'paper') {
-    result = 'Tie';
-  } else if (computerMove === 'scissors') {
-    result = 'You lose';
-  } else if (computerMove === 'rock') {
-    result = 'You win';
+  if (playerMove = 'rock') {
+    if (computerMove === 'rock') {
+      result = 'Tie';
+    } else if (computerMove === 'paper') {
+      result = 'You lose';
+    } else if (computerMove === 'scissors') {
+      result = 'You win';
+    }
+    alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}.`);
+  } else if (playerMove = 'paper') {
+    if (computerMove === 'paper') {
+      result = 'Tie';
+    } else if (computerMove === 'scissors') {
+      result = 'You lose';
+    } else if (computerMove === 'rock') {
+      result = 'You win';
+    }
+    alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}.`);
+  } else if (playerMove = 'scissors') {
+    if (computerMove === 'scissors') {
+      result = 'Tie';
+    } else if (computerMove === 'rock') {
+      result = 'You lose';
+    } else if (computerMove === 'paper') {
+      result = 'You win';
+    }
+    alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}.`);
   }
-  alert(`You picked paper. Computer picked ${computerMove}. ${result}.`);
-  }
-
-function scissorsClicked() {
-  const computerMove = pickComputerMove();
-  if (computerMove === 'scissors') {
-    result = 'Tie';
-  } else if (computerMove === 'rock') {
-    result = 'You lose';
-  } else if (computerMove === 'paper') {
-    result = 'You win';
-  }
-  alert(`You picked scissors. Computer picked ${computerMove}. ${result}.`);
-  }
+ 
+}
