@@ -56,8 +56,24 @@ function convertTemperature(degrees, unit) {
     return `${result}F`;
   } else if (unit === 'F') {
     const result = convertToCelcius(degrees);
-    return `${result}C`;
+    `${result}C`;
   }
 }
-console.log(convertTemperature(25, 'C'));
-console.log(convertTemperature(86, 'F'));
+console.log("convert to F", convertTemperature(25, 'C'));
+convertTemperature(86, 'F');
+
+// 7h and 7i
+let cartQuantity=0;
+
+function updateCartQuantity(value) {
+  if (cartQuantity+value>10) {
+    alert('Cart is full');
+    return;
+  }
+  if (cartQuantity+value<0) {
+    alert('Not enough items in cart');
+    return;
+  }
+  cartQuantity+=value;
+  console.log(`Cart quantity: ${cartQuantity}`);
+}
