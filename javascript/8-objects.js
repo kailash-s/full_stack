@@ -41,10 +41,12 @@ const product3 = {
 }
 product3.func();
 
+// Built-In JSON object
 // JSON means javascript object notation and is a syntax similar to javascript object but with less features like no functions
 // all JSON properties and values need "", doesn't support ''
 // JSON syntax can be understood in almost all coding languages so we use it when we send data between computers and store data
 console.log(JSON.stringify(product2));
 
+// we can use parse to convert back to an object
 const jsonString = JSON.stringify(product2)
 console.log(JSON.parse(jsonString));
