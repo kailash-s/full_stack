@@ -35,6 +35,7 @@ console.log(product2.rating.count);
 
 // methods are functions inside an object
 const product3 = {
+  name1: 'boots',
   func: function function1 () {
     console.log('function inside object');
   }
@@ -50,3 +51,31 @@ console.log(JSON.stringify(product2));
 // we can use parse to convert back to an object
 const jsonString = JSON.stringify(product2)
 console.log(JSON.parse(jsonString));
+
+// auto-boxing allows other values to have properties and methods like below:
+console.log('hello'.length);
+console.log('hello'.toUpperCase());
+
+// COPY BY REFERENCE
+// objects are references so the message below is stored in computer's memory and object1 is just something to refer to
+const object1 = {
+  message: 'hello'
+};
+const object2 = object1;
+const object3 = {
+  message: 'hello'
+};
+console.log(object3 === object1); // false because object3 refers to something different even though data inside is the same
+console.log(object2 === object1); // true because we set object2 to object1 so they refer to the same data
+// with objects, we can still change the value even though we use const
+object1.message = 'hi';
+
+// destructuring is a shortcut to making variables out of properties in objects like below
+const object4 = {
+  message: 'hello',
+  price: 799
+};
+//const message = object4.message;
+//const {message} = object4; // this line is the same as the one above
+// this can be done with multiple properties like below
+const {message, price} = object4;
