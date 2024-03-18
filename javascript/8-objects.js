@@ -76,6 +76,20 @@ const object4 = {
   price: 799
 };
 //const message = object4.message;
-//const {message} = object4; // this line is the same as the one above
+const {message} = object4; // this line is the same as the one above
 // this can be done with multiple properties like below
-const {message, price} = object4;
+// const {message, price} = object4;
+
+// shorthand property is when you can set a property to a variable if they're named the same
+const object5 = {
+  // message: message
+  message, // this is the same as the line above
+
+  // shorthand method is you don't need to type out function in an object
+  // method: function function2() {
+  //  console.log('method');
+  // }
+  method() { // this does the same as the three lines above
+    console.log('method'); 
+  }
+};
