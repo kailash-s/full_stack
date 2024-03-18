@@ -93,3 +93,35 @@ const object5 = {
     console.log('method'); 
   }
 };
+
+// EXERCISES
+// 8a
+const product1 = {
+  name: 'basketball',
+  price: 2095,
+}
+console.log(product1);
+
+// 8b
+product1.price += 500;
+console.log(product1);
+
+// 8c
+product1['delivery-time'] = '3 days';
+console.log(product1);
+
+//8d
+const product4 = {
+  name: 'football',
+  price: 10
+};
+
+function comparePrice(product1, product4) {
+  if (product1.price < product4.price) {
+    return product1;
+  } else {
+    return product4;
+  }
+};
+
+console.log(comparePrice(product1, product4));
