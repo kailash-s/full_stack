@@ -125,3 +125,31 @@ function comparePrice(product1, product4) {
 };
 
 console.log(comparePrice(product1, product4));
+
+// 8e
+const product5 = {
+  name: 'shirt',
+  price: '2000'
+};
+
+const product6 = {
+  name: 'trousers',
+  price: '3000'
+};
+
+const product7 = product5
+
+function isSameProduct(product5, product6) {
+  if (product5===product6) {
+    return true;
+  } else {
+    return false;
+  }
+};
+console.log(isSameProduct(product5, product7));
+
+// 8f
+console.log('Good morning'.toLowerCase());
+
+// 8g
+console.log('test'.repeat(2));
