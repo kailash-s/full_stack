@@ -27,6 +27,7 @@
   <button onclick="updateCalculation('/')">/</button><br><br>
   <button onclick="
     calculation = '';
+    localStorage.removeItem('calculation');
     console.log('Cleared');
   ">Clear</button><br><br>
 
