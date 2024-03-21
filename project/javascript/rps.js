@@ -4,8 +4,7 @@ let score = JSON.parse(localStorage.getItem('score')) || {
   ties: 0
 };
 
-document.querySelector('.js-score')
-  .innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
+updateScoreElement();
 
 function playGame(playerMove) {
   const computerMove = pickComputerMove();
@@ -39,6 +38,8 @@ function playGame(playerMove) {
       result = 'You win.';
     }
   }
+  document.querySelector('.js-moves')
+    .innerHTML = `You ${playerMove} - ${computerMove} Computer`;
 
   if (result === 'You win.') {
     score.wins+=1;
@@ -47,12 +48,18 @@ function playGame(playerMove) {
   } else if (result === 'Tie.') {
     score.ties+=1;
   }
+  document.querySelector('.js-result')
+    .innerHTML = result;
 
   // variables are temporary and deleted when we refresh the page so we use local storage to keep/remember it
   localStorage.setItem('score', JSON.stringify(score));
 
-  alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
-Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
+  updateScoreElement();
+}
+
+function updateScoreElement() {
+  document.querySelector('.js-score')
+    .innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
 }
 
 function pickComputerMove() {
@@ -76,4 +83,5 @@ function resetScore() {
   score.losses=0;
   score.ties=0;
   localStorage.removeItem('score');
+  updateScoreElement();
 }
