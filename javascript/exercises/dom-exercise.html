@@ -7,7 +7,12 @@
 </head>
 <body>
   <p>Youtube Subscribe Button</p>
-  <button onclick="buttonClicked()" class="js-subscribe-button">Subscribe</button>
+  <button onclick="buttonClicked();" class="js-subscribe-button">Subscribe</button>
+
+  <p>Amazon Shipping Calculator</p>
+  <input placeholder="Cost of order" class="js-cost-input" onkeydown="enterPressed(event);">
+  <button onclick="calculateTotal();">Calculate</button>
+  <p class="js-total-cost"></p>
 
   <script src="dom-exercise.js"></script>
 </body>
