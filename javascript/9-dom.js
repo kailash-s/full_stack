@@ -26,3 +26,13 @@ console.log(document.querySelector('.js-button'));
 // 5. this can also be made into a variable
 const buttonElement = document.querySelector('.js-button');
 console.log(buttonElement);
+
+// Javascript automatically converts strings to numbers with -, * and / like below
+console.log('25' - 5); // this gives 20
+// but not for +
+console.log('25' + 5); // this gives 255
+// so best to do maths with only numbers
+
+// window object represents the browser but it doesn't need to be typed as Javascript puts it in the background
+window.document
+window.console.log
