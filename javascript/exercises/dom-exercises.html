@@ -7,11 +7,16 @@
 </head>
 <body>
   <button>9a</button>
+
   <button class="js-done" onclick="buttonClicked();">9b</button>
 
-  <button onclick="choiceMade();">heads</button>
-  <button onclick="choiceMade();">tails</button>
+  <button onclick="choiceMade('heads');">heads</button>
+  <button onclick="choiceMade('tails');">tails</button>
   <p class="js-choice"></p>
+
+  <input class="js-text" type="text" onkeydown="enterPressed(event);">
+  <button onclick="textInput();">Submit</button>
+  <p class="js-input"></p>
 
   <script src="dom-exercises.js"></script>
 </body>

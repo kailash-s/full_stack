@@ -7,7 +7,20 @@ function buttonClicked() {
     .innerHTML = '9b done!';
 }
 
-// 9c NOT FINISHED
-function choiceMade() {
-  document.querySelector('.js-choice').innerHTML = `You chose: ${document.querySelector('button').innerHTML}`
+// 9c
+function choiceMade(choice) {
+  document.querySelector('.js-choice').innerHTML = `You chose: ${choice}`;
+}
+
+// 9d
+function textInput() {
+  const inputElement = document.querySelector('.js-text');
+  document.querySelector('.js-input').innerHTML = `Your name is ${inputElement.value}`;
+}
+
+// 9e
+function enterPressed(event) {
+  if (event.key === 'Enter') {
+    textInput();
+  }
 }
