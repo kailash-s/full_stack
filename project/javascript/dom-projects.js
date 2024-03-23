@@ -10,15 +10,16 @@ if (buttonElement.innerText === 'Subscribe') {
 }
 
 // Amazon Shipping Calculator
+// 9g updated to show correct figure when binary numbers are affected
 function calculateTotal() {
   const inputElement = document.querySelector('.js-cost-input');
-  let cost = Number(inputElement.value);
+  let cost = Number(inputElement.value*100);
 
-  if (cost<40) {
-    cost+=10;
+  if (cost<4000) {
+    cost+=1000;
   }
 
-  document.querySelector('.js-total-cost').innerHTML = `$${cost}`;
+  document.querySelector('.js-total-cost').innerHTML = `$${cost/100}`;
 }
 
 function enterPressed(event) {

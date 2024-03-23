@@ -24,3 +24,9 @@ function enterPressed(event) {
     textInput();
   }
 }
+
+// 9h
+function upPressed() {
+    const inputElement = document.querySelector('.js-text2');
+    document.querySelector('.js-input2').innerHTML = `${inputElement.value}`;
+}
