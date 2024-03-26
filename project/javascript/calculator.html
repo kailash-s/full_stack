@@ -28,8 +28,10 @@
   <button onclick="
     calculation = '';
     localStorage.removeItem('calculation');
+    displayCalculation();
     console.log('Cleared');
-  ">Clear</button><br><br>
+  ">Clear</button><br>
+  <p class="js-calculate"></p>
 
   <script src="calculator.js"></script>
 </body>
