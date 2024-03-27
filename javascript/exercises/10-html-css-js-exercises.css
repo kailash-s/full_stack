@@ -1,0 +1,30 @@
+.amazon-button {
+  border: none;
+  background-color: rgb(255,216,20);
+  padding: 10px 60px;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+.now-button {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 16px 25px;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 7px;
+}
+
+.later-button {
+  border: none;
+  background-color: rgb(230,230,230);
+  padding: 16px 25px;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 7px;
+}
+
+.gaming-button {
+  
+}

@@ -39,7 +39,7 @@ function playGame(playerMove) {
     }
   }
   document.querySelector('.js-moves')
-    .innerHTML = `You ${playerMove} - ${computerMove} Computer`;
+    .innerHTML = `You <img class="move-icon" src="images/${playerMove}-emoji.png"> - <img class="move-icon" src="images/${computerMove}-emoji.png"> Computer`;
 
   if (result === 'You win.') {
     score.wins+=1;
