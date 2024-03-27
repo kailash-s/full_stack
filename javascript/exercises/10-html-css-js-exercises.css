@@ -25,6 +25,16 @@
   border-radius: 7px;
 }
 
-.gaming-button {
-  
+.button {
+  border: none;
+  background-color: lightgray;
+  padding: 15px 21px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.is-toggled {
+  background-color: black;
+  color: white;
 }
