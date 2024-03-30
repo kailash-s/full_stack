@@ -1,0 +1,40 @@
+body {
+  background-color: black;
+}
+
+p {
+  color: white;
+  font-family: Arial;
+  font-size: 37px;
+  margin: 7px;
+}
+
+.input-button {
+  padding: 13px 19px;
+  border: none;
+  border-radius: 22px;
+  color: white;
+  background-color: #333333;
+  font-size: 17px;
+  font-family: Arial;
+}
+
+.arithmetic-button {
+  padding: 13px 19px;
+  border: none;
+  border-radius: 22px;
+  color: white;
+  background-color: #FDA00A;
+  font-size: 17px;
+  font-family: Arial;
+}
+
+.clear-button {
+  padding: 13px 7px;
+  border: none;
+  border-radius: 22px;
+  color: white;
+  background-color: #333333;
+  font-size: 12px;
+  font-family: Arial;
+}

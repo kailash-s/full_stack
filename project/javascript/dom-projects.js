@@ -17,10 +17,16 @@ function calculateTotal() {
   const inputElement = document.querySelector('.js-cost-input');
   let cost = Number(inputElement.value*100);
 
-  if (cost<4000) {
-    cost+=1000;
+  // 10h adding error message if cost is less than 0
+  if (cost<0) {
+    document.querySelector('.js-total-cost').innerHTML = 'Error: cost cannot be less than $0';
+    document.querySelector('.js-total-cost').classList.add('error-cost');
+    return
   }
 
+  if (cost<4000 && cost>0) {
+    cost+=1000;
+  } 
   document.querySelector('.js-total-cost').innerHTML = `$${cost/100}`;
 }
 
