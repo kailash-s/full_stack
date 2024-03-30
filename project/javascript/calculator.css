@@ -1,40 +1,32 @@
 body {
   background-color: black;
+  font-family: Arial;
 }
 
 p {
   color: white;
-  font-family: Arial;
   font-size: 37px;
   margin: 7px;
 }
 
-.input-button {
-  padding: 13px 19px;
+.value-button {
+  height: 50px;
+  width: 50px;
   border: none;
-  border-radius: 22px;
+  border-radius: 25px;
   color: white;
-  background-color: #333333;
-  font-size: 17px;
-  font-family: Arial;
+  font-size: 20px;
 }
 
-.arithmetic-button {
-  padding: 13px 19px;
-  border: none;
-  border-radius: 22px;
-  color: white;
+.grey-button {
+  background-color: #333333;
+}
+
+.orange-button {
   background-color: #FDA00A;
-  font-size: 17px;
-  font-family: Arial;
 }
 
 .clear-button {
-  padding: 13px 7px;
-  border: none;
-  border-radius: 22px;
-  color: white;
   background-color: #333333;
-  font-size: 12px;
-  font-family: Arial;
+  font-size: 15px;
 }

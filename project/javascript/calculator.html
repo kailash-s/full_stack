@@ -8,31 +8,31 @@
 </head>
 <body>
   <p class="js-calculate"></p>
-  <button onclick="updateCalculation(1)" class="input-button">1</button>
-  <button onclick="updateCalculation(2)" class="input-button">2</button>
-  <button onclick="updateCalculation(3)" class="input-button">3</button>
-  <button onclick="updateCalculation('+')" class="arithmetic-button">+</button><br><br>
-  <button onclick="updateCalculation(4)" class="input-button">4</button>
-  <button onclick="updateCalculation(5)" class="input-button">5</button>
-  <button onclick="updateCalculation(6)" class="input-button">6</button>
-  <button onclick="updateCalculation('-')" class="arithmetic-button">-</button><br><br>
-  <button onclick="updateCalculation(7)" class="input-button">7</button>
-  <button onclick="updateCalculation(8)" class="input-button">8</button>
-  <button onclick="updateCalculation(9)" class="input-button">9</button>
-  <button onclick="updateCalculation('*')" class="arithmetic-button">*</button><br><br>
-  <button onclick="updateCalculation(0)" class="input-button">0</button>
-  <button onclick="updateCalculation(' . ')" class="input-button">.</button>
+  <button onclick="updateCalculation(1)" class="value-button grey-button">1</button>
+  <button onclick="updateCalculation(2)" class="value-button grey-button">2</button>
+  <button onclick="updateCalculation(3)" class="value-button grey-button">3</button>
+  <button onclick="updateCalculation('+')" class="value-button orange-button">+</button><br><br>
+  <button onclick="updateCalculation(4)" class="value-button grey-button">4</button>
+  <button onclick="updateCalculation(5)" class="value-button grey-button">5</button>
+  <button onclick="updateCalculation(6)" class="value-button grey-button">6</button>
+  <button onclick="updateCalculation('-')" class="value-button orange-button">-</button><br><br>
+  <button onclick="updateCalculation(7)" class="value-button grey-button">7</button>
+  <button onclick="updateCalculation(8)" class="value-button grey-button">8</button>
+  <button onclick="updateCalculation(9)" class="value-button grey-button">9</button>
+  <button onclick="updateCalculation('*')" class="value-button orange-button">*</button><br><br>
+  <button onclick="updateCalculation(0)" class="value-button grey-button">0</button>
+  <button onclick="updateCalculation('.')" class="value-button grey-button">.</button>
   <button onclick="
     calculation = eval(calculation)
     console.log(calculation);
-  " class="input-button">=</button>
-  <button onclick="updateCalculation('/')" class="arithmetic-button">/</button><br><br>
+  " class="value-button grey-button">=</button>
+  <button onclick="updateCalculation('/')" class="value-button orange-button">/</button><br><br>
   <button onclick="
     calculation = '';
     localStorage.removeItem('calculation');
     displayCalculation();
     console.log('Cleared');
-  " class="clear-button">Clear</button><br>
+  " class="clear-button value-button">Clear</button><br>
 
   <script src="calculator.js"></script>
 </body>
