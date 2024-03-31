@@ -1,4 +1,4 @@
-// An array is another type of value and is a lost of values
+// 1. AN ARRAY is another type of value and is a lost of values
 const myArray = [10, 20, 30];
 console.log(myArray);
 
@@ -20,3 +20,47 @@ myArray.push(100); // this method adds a value at the end of an array
 console.log(myArray);
 myArray.splice(0, 1); // this method removes values from an array
 console.log(myArray);
+
+// 2. A LOOP lets us run code over and over
+// below is the while loop
+let i = 1;
+
+while (i<=5) {
+  console.log(i);
+  i++;
+}
+
+// below is the for loop
+for (let i = 1; i<=5; i++) {
+  console.log(i);
+}
+
+// recommended to use for loops usually and while loops for non-standard loops like below
+let randomNumber = 0;
+
+while (randomNumber<0.5) {
+  randomNumber = Math.random();
+}
+console.log(randomNumber);
+
+// 3. LOOPING THROUGH AN ARRAY
+const toDoList = [
+  'make dinner',
+  'wash dishes',
+  'Watch youtube'
+];
+
+for (let i = 0; i < toDoList.length; i++) {
+  const value = toDoList[i];
+  console.log(value);
+}
+
+// 4. ACCUMULATOR PATTERN
+const nums = [1, 1, 3];
+let total = 0;
+
+for (let i = 0; i < nums.length; i++) {
+  const num = nums[i];
+  total += num;
+}
+console.log(nums[i]);
