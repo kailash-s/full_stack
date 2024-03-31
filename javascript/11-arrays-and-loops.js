@@ -47,7 +47,7 @@ console.log(randomNumber);
 const toDoList = [
   'make dinner',
   'wash dishes',
-  'Watch youtube'
+  'watch youtube'
 ];
 
 for (let i = 0; i < toDoList.length; i++) {
@@ -56,6 +56,7 @@ for (let i = 0; i < toDoList.length; i++) {
 }
 
 // 4. ACCUMULATOR PATTERN
+// here we are totalling the values in the array
 const nums = [1, 1, 3];
 let total = 0;
 
@@ -63,4 +64,13 @@ for (let i = 0; i < nums.length; i++) {
   const num = nums[i];
   total += num;
 }
-console.log(nums[i]);
+console.log(total);
+
+// Second example, we will double each value in an array and put it into a new array
+const numsDoubled = [];
+
+for (let i = 0; i < nums.length; i++) {
+  const num = nums[i]
+  numsDoubled.push(num * 2);
+}
+console.log(numsDoubled);
