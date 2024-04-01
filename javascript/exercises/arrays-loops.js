@@ -43,7 +43,7 @@ while (number>=0) {
   number--;
 }
 
-// 11g
+// 11g, 11h
 let valueAddOne = [];
 
 function addOne(array) {
@@ -54,3 +54,48 @@ function addOne(array) {
   return valueAddOne;
 }
 console.log(addOne([1,2,3]));
+
+// 11i
+let valueAddNum = [];
+
+function addNum(array, num) {
+  for (let j = 0; j <= array.length-1; j++) {
+    const value = array[j];
+    valueAddNum.push(value+num);
+  }
+  return valueAddNum;
+}
+console.log(addNum([1,2,3], 2));
+
+// 11j
+let arrayTotal = [];
+
+function addArrays(array1, array2) {
+  for (let i = 0; i <= array1.length-1; i++) {
+    const index1 = array1[i];
+    const index2 = array2[i];
+    arrayTotal.push(index1+index2);
+  }
+  return arrayTotal;
+}
+console.log(addArrays([1,1,2], [1,1,3]));
+
+// 11k
+function countPositive(nums) {
+  let counter = 0;
+  for (let i = 0; i <= nums.length-1; i++) {
+    if (nums[i]>0) {
+      counter++;
+    }
+  }
+  return counter;
+}
+console.log(countPositive([1,-3,5,3]));
+
+// 11l
+function minMax(nums) {
+  const object = {min:nums[0], max: nums[0]};
+  for (i=0; i<=nums.length-1; i++) {
+    let value = nums[i];
+  }
+}
