@@ -94,8 +94,29 @@ console.log(countPositive([1,-3,5,3]));
 
 // 11l
 function minMax(nums) {
-  const object = {min:nums[0], max: nums[0]};
+  const object = {min:nums[0], max:nums[0]};
   for (i=0; i<=nums.length-1; i++) {
     let value = nums[i];
+    if (value<object.min) {
+      object.min = value;
+    } else if (value>object.max) {
+      object.max = value;
+    }
   }
+  return object;
 }
+console.log(minMax([3]));
+
+//11n
+function countWords(words) {
+  let object = {};
+  for (i=0; i<=words.length-1; i++) {
+    if (object[words[i]]>0) {
+      object[words[i]]++;
+    } else {
+      object[words[i]] = 1;
+    }
+  }
+  return object;
+}
+console.log(countWords(['apple','grape','apple','apple']));
