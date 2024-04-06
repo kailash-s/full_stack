@@ -1,3 +1,4 @@
+// PART ONE
 // 1. AN ARRAY is another type of value and is a lost of values
 const myArray = [10, 20, 30];
 console.log(myArray);
@@ -74,3 +75,60 @@ for (let i = 0; i < nums.length; i++) {
   numsDoubled.push(num * 2);
 }
 console.log(numsDoubled);
+
+// PART TWO
+// Arrays are references
+const array1 = [1,2,3];
+const array2 = array1;
+array2.push(4);
+console.log(array1);
+console.log(array2);
+// Doing the above will push 4 into array1 as well
+// we can use slice to avoid this
+const array3 = [1,2,3];
+const array4 = array3.slice();
+array3.push(4);
+console.log(array3);
+console.log(array4);
+// The above won't push 4 into array4
+
+// Array Destructuring is a variable making shortcut as below:
+const [firstValue, secondValue] = [1,2];
+
+// break allows us to stop a loop early and continue allows us to skip 1 iteration like below:
+for (let i =1; i<=10; i++) {
+  if (i===3) {
+    continue;
+  }
+  console.log(i);
+  if (i===8) {
+    break;
+  }
+}
+
+// using continue is a while requires us to manually input the increment step or it'll become a forever loop
+let k = 1;
+while (k<=10) {
+  if (k % 3 === 0) {
+    k++;
+    continue;
+  }
+  console.log(k);
+  k++;
+}
+
+// we can use loops in functions as below
+function doubleArray(numbers) {
+  const numsDoubled2 = [];
+
+  for (let i = 0; i < numbers.length; i++) {
+    const num = numbers[i]
+    if (num === 0) {
+      return numsDoubled2; // we can use return to break out of a loop like in line 134
+    }
+    numsDoubled2.push(num * 2);
+  }
+  return numsDoubled2;
+}
+console.log(doubleArray([1,1,3]));
+console.log(doubleArray([1,1,0,5]));
