@@ -1,3 +1,4 @@
+// PART ONE
 // 11a
 const nums = [10, 20, 30];
 nums[nums.length-1] = 99;
@@ -120,3 +121,53 @@ function countWords(words) {
   return object;
 }
 console.log(countWords(['apple','grape','apple','apple']));
+
+// PART TWO
+// 11o, 11p
+const stringArray = ['hello', 'world', 'search', 'good', 'search'];
+let index = -1;
+for (let i=0; i<=stringArray.length-1; i++) {
+  if (stringArray[i] === 'search') {
+    index = i;
+    break;
+  }
+}
+if (index === -1) {
+  console.log('-1');
+} else {
+  console.log(index);
+}
+
+// 11q
+function findIndex(array, word) {
+  let index = -1;
+  for (let i = 0; i<=array.length-1; i++) {
+    if (array[i] === word) {
+      index = i;
+      break;
+    }
+  }
+  if (index === -1) {
+    console.log('-1');
+  } else {
+    console.log(index);
+  }
+}
+findIndex(['red', 'green', 'blue', 'green'], 'green');
+findIndex(['red', 'blue', 'yellow'], 'green');
+
+// 11r
+function removeEgg(foods) {
+  const result = [];
+  let eggCounter=0;
+  for (let i = 0; i<=foods.length-1; i++) {
+    if (foods[i] === 'egg' && eggCounter<2) {
+      eggCounter++;
+      continue;
+    } else {
+      result.push(foods[i]);
+    }
+  }
+  return result;
+}
+console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']));
