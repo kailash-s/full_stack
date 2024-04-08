@@ -1,7 +1,7 @@
 const toDoList = [{
   name: '',
   dueDate: ''
-}];
+}] || JSON.parse(localStorage.getItem('toDoList'));
 
 renderToDoList();
 
@@ -36,4 +36,5 @@ function addToDo() {
   });
   inputElement.value = '';
   renderToDoList();
+  localStorage.setItem('toDoList', JSON.stringify(toDoList));
 }
