@@ -46,6 +46,15 @@ run(function() {
   console.log('hello4')
 });
 
+// setTimeout is used when we want to call a function in the future
+// this is Asynchronous code as the computer won't wait for a line to finish before going to the next line
 setTimeout(function() {
   console.log('timeout');
 }, 3000);
+console.log('next line');
+
+// setInterval will keep running a function in the future, it is also Asynchronous code
+setInterval(function() {
+  console.log('interval');
+}, 3000);
+console.log('next line 2');
