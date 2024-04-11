@@ -58,3 +58,19 @@ setInterval(function() {
   console.log('interval');
 }, 3000);
 console.log('next line 2');
+
+// forEach is another way to loop through an array
+[
+  'make dinner',
+  'wash dishes',
+  'watch youtube'
+].forEach(function(value, index) {
+  if (value === 'wash dishes') { // return in a forReach does the same as a continue, it ends the function early and goes on to the next function
+    return;
+  }
+
+  console.log(index);
+  console.log(value);
+});
+
+// there's no easy way to use break in a forReach, if we want to, it's better to use a for loop
