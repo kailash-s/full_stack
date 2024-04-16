@@ -36,13 +36,11 @@ function hasAdded() {
   }, 2000);
 }
 
-// 12g, 12h
+// 12g, 12h, 12i
 let messages = 0;
 function isClicked(param = 0) {
   if (messages+param >= 0) {
     messages += param;
-  } else {
-    messages = 0;
   }
   console.log(messages);
 }
