@@ -117,3 +117,17 @@ const eventListener = () => {
   console.log('click');
 };
 buttonElement.removeEventListener('click', eventListener);
+
+// filter method lets use go through values in an array like below
+console.log([1,-3,5].filter((value, index) => {
+  if (value >= 0) {
+    return true;
+  } else {
+    return false;
+  }
+}));
+
+// map creates a new array and whatever we return gets added to the new array
+console.log([1,1,3].map((value, index) => {
+  return value * 2;
+}));
