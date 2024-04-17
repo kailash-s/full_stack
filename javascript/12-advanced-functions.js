@@ -86,7 +86,7 @@ const oneParam = param => {
   console.log(param+1);
 }
 oneParam(2);
-// Another difference is if only one line of code, curly brackets return aren't needed like below
+// Another difference is if only one line of code, curly brackets and return aren't needed like below
 const oneLine = () => 2 + 3;
 console.log(oneLine());
 // It's recommended to use arrow functions when passing a function into a function
@@ -131,3 +131,8 @@ console.log([1,-3,5].filter((value, index) => {
 console.log([1,1,3].map((value, index) => {
   return value * 2;
 }));
+// below is the same code as above but done with shortcuts for arrow functions
+// 1. index not needed in this example so brackets not needed with just one param
+// 2. function has one line of code so can be written in same line
+// 3. that makes curly brackets and return optional
+console.log([1,1,3].map(value => value * 2));

@@ -1,3 +1,4 @@
+// PART ONE 
 // 12a
 const add = function() {
   console.log(2+3);
@@ -52,3 +53,29 @@ setInterval(function() {
   }
 }, 1000);
 isClicked();
+
+// PART TWO
+// 12j, 12k
+const multiply = (param1, param2) => param1 * param2;
+console.log(multiply(2,3));
+console.log(multiply(7,10));
+
+// 12l
+function countPositive(nums) {
+  let counter = 0;
+  nums.forEach(function(value) {
+    if (value >= 0) {
+      counter++;
+    }
+  });
+  return counter;
+};
+console.log(countPositive([1,-3,5]));
+console.log(countPositive([-2,3,-5,7,10]));
+
+// 12m
+function addNum(array, num) {
+  return array.map(value => value + num);
+};
+console.log(addNum([1,2,3], 3));
+console.log(addNum([-2,-1,0,99], 2));
