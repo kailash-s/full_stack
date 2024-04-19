@@ -16,28 +16,28 @@ runTwice(function() {
 })
 runTwice(add);
 
-// 12c, 12d
-function hasFinished() {
-  const updateButton = document.querySelector('.js-finished-button');
+// 12c, 12d, 12p, 12q
+const updateButton = document.querySelector('.js-finished-button');
+updateButton.addEventListener('click', () => {
   updateButton.innerHTML = 'Loading...'
-  setTimeout(function() {
+  setTimeout(() => {
     updateButton.innerHTML = 'Finished!';
   }, 1000);
-}
+});
 
-// 12e, 12f
+// 12e, 12f, 12p, 12q
+const addElement = document.querySelector('.js-add-button');
 let timeoutId;
-function hasAdded() {
+addElement.addEventListener('click', () => {
   clearTimeout(timeoutId);
-
   const addedElement = document.querySelector('.js-added');
   addedElement.innerHTML = 'Added';
-  timeoutId = setTimeout(function() {
-    addedElement.innerHTML = '';
+  timeoutId = setTimeout(() => {
+  addedElement.innerHTML = '';
   }, 2000);
-}
+});
 
-// 12g, 12h, 12i
+// 12g, 12h, 12i, 12p
 let messages = 0;
 function isClicked(param = 0) {
   if (messages+param >= 0) {
@@ -45,7 +45,7 @@ function isClicked(param = 0) {
   }
   console.log(messages);
 }
-setInterval(function() {
+setInterval(() => {
   if (document.title === 'Document' && messages > 0) {
     document.title = `(${messages}) New messages`;
   } else {
@@ -79,3 +79,22 @@ function addNum(array, num) {
 };
 console.log(addNum([1,2,3], 3));
 console.log(addNum([-2,-1,0,99], 2));
+
+// 12n
+function removeEgg(foods) {
+  return foods.filter((value) => value !== 'egg');
+};
+console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']));
+
+// 12o
+function removeEgg(foods) {
+  eggCounter = 0;
+  return foods.filter((value) => {
+    if (value === 'egg') {
+      eggCounter++;
+      return eggCounter > 2;
+    }
+    return true;
+  });
+};
+console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']));
