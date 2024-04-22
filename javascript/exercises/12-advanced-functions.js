@@ -45,6 +45,14 @@ function isClicked(param = 0) {
   }
   console.log(messages);
 }
+
+document.querySelector('.js-increase').addEventListener(('click'), function() {
+  isClicked(1);
+});
+document.querySelector('.js-decrease').addEventListener(('click'), function() {
+  isClicked(-1);
+});
+
 setInterval(() => {
   if (document.title === 'Document' && messages > 0) {
     document.title = `(${messages}) New messages`;
@@ -52,7 +60,6 @@ setInterval(() => {
     document.title = 'Document';
   }
 }, 1000);
-isClicked();
 
 // PART TWO
 // 12j, 12k

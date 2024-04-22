@@ -9,18 +9,21 @@ updateScoreElement();
 let isAutoPlaying = false;
 let intervalId;
 
-function autoPlay() {
+const autoPlayElement = document.querySelector('.js-autoplay')
+autoPlayElement.addEventListener('click', () => {
   if (!isAutoPlaying) {
     intervalId = setInterval(() => {
       const playerMove = pickComputerMove();
       playGame(playerMove);
     }, 1000);
     isAutoPlaying = true;
+    autoPlayElement.innerHTML = 'Stop';
   } else {
     clearInterval(intervalId);
     isAutoPlaying = false;
+    autoPlayElement.innerHTML = 'Auto play';
   }
-}
+});
 
 document.querySelector('.js-rock-button').addEventListener('click', () => {
   playGame('rock');
