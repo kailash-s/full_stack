@@ -120,8 +120,11 @@ function resetScore() {
 
 function confirmReset() {
   const confirmElement = document.querySelector('.js-confirm');
-  confirmElement.innerHTML = `Are you sure you want to reset the score? <button class="js-yes">Yes</button> <button class="js-no">No</button>`;
-  document.querySelector('.js-yes').addEventListener('click', resetScore);
+  confirmElement.innerHTML = `Are you sure you want to reset the score? <button class="js-yes yes-button">Yes</button> <button class="js-no no-button">No</button>`;
+  document.querySelector('.js-yes').addEventListener('click', () => {
+    resetScore();
+    confirmElement.innerHTML = '';
+  });
   document.querySelector('.js-no').addEventListener('click', () => {
     confirmElement.innerHTML = '';
   });
@@ -141,6 +144,6 @@ document.body.addEventListener('keydown', (event) => {
   } else if (event.key === 'a') {
     autoPlay();
   } else if (event.key === 'Backspace') {
-    resetScore();
+    confirmReset();
   }
 });
