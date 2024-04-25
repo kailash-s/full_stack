@@ -118,21 +118,17 @@ function resetScore() {
   updateScoreElement();
 }
 
-function confirmReset() {
+const confirmReset = () => {
   const confirmElement = document.querySelector('.js-confirm');
   confirmElement.innerHTML = `Are you sure you want to reset the score? <button class="js-yes yes-button">Yes</button> <button class="js-no no-button">No</button>`;
   document.querySelector('.js-yes').addEventListener('click', () => {
     resetScore();
     confirmElement.innerHTML = '';
   });
-  document.querySelector('.js-no').addEventListener('click', () => {
-    confirmElement.innerHTML = '';
-  });
+  document.querySelector('.js-no').addEventListener('click', () => confirmElement.innerHTML = '');
 };
 
-document.querySelector('.js-reset').addEventListener('click', () => {
-  confirmReset();
-});
+document.querySelector('.js-reset').addEventListener('click', () => confirmReset());
 
 document.body.addEventListener('keydown', (event) => {
   if (event.key === 'r') {
