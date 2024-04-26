@@ -656,5 +656,37 @@ const products = [
       "apparel",
       "mens"
     ]
+  },
+  {
+    id: "fd98524c-eb89-4dd0-a2f4-82d3e11951fd",
+    image: "images/products/umbrella.jpg",
+    name: "Windproof Golf Umbrella with UV Protection",
+    rating: {
+      stars: 4,
+      count: 1367
+    },
+    priceCents: 1800,
+    keywords: [
+      "umbrella",
+      "rain",
+      "weather",
+      "accessory"
+    ]
+  },
+  {
+    id: "bc2847e9-5323-403f-b7cf-57fde044a955",
+    image: "images/products/backpack.jpg",
+    name: "Outdoor Adventure Backpack",
+    rating: {
+      stars: 4.5,
+      count: 2853
+    },
+    priceCents: 1650,
+    keywords: [
+      "backpacks",
+      "bags",
+      "travel gear",
+      "outdoor gear"
+    ]
   }
 ];
