@@ -1,6 +1,14 @@
 import { cart, removeFromCart, calculateCartQuantity, updateQuantity } from "../data/cart.js";
 import { products } from "../data/products.js";
 import { formatCurrency } from "./utils/money.js";
+import { hello } from "https://unpkg.com/supersimpledev@1.0.1/hello.esm.js";
+import dayjs from "https://unpkg.com/dayjs@1.11.10/esm/index.js";
+
+hello();
+
+const today = dayjs();
+const deliveryDate = today.add(7, 'days');
+console.log(deliveryDate.format('dddd, MMMM D'));
 
 let cartSummaryHTML = '';
 
@@ -34,12 +42,12 @@ cart.forEach((cartItem) => {
         </div>
         <div class="product-quantity">
           <span>
-            Quantity: <span class="quantity-label js-quantity">${cartItem.quantity}</span>
+            Quantity: <span class="quantity-label js-quantity-${matchingProduct.id}">${cartItem.quantity}</span>
           </span>
           <span class="update-quantity-link link-primary js-update-link" data-product-id=${matchingProduct.id}>
             Update
           </span>
-          <input class="quantity-input js-quantity-input">
+          <input class="quantity-input js-quantity-input-${matchingProduct.id}">
           <span class="save-quantity-link link-primary js-save-link" data-product-id=${matchingProduct.id}>Save</span>
           <span class="delete-quantity-link link-primary js-delete-link" data-product-id=${matchingProduct.id}>
             Delete
@@ -124,10 +132,10 @@ document.querySelectorAll('.js-save-link').forEach((link) => {
     const container = document.querySelector(`.js-cart-item-container-${productId}`);
     container.classList.remove('is-editing-quantity');
 
-    const quantityValue = Number(document.querySelector('.js-quantity-input').value);
+    const quantityValue = Number(document.querySelector(`.js-quantity-input-${productId}`).value);
     updateQuantity(productId, quantityValue);
-    document.querySelector('.js-quantity').innerHTML = quantityValue;
-    updateCartQuantity(quantityValue);
+    document.querySelector(`.js-quantity-${productId}`).innerHTML = quantityValue;
+    updateCartQuantity();
   });
 });
 
