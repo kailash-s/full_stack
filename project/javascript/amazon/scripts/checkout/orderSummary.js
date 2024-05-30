@@ -1,4 +1,4 @@
-import { cart, removeFromCart, calculateCartQuantity, updateQuantity, updateDeliveryOption } from "../../data/cart.js";
+import { cart, removeFromCart, updateQuantity, updateDeliveryOption } from "../../data/cart.js";
 import { products, getProduct } from "../../data/products.js";
 import { formatCurrency } from "../utils/money.js";
 import dayjs from "https://unpkg.com/dayjs@1.11.10/esm/index.js";
@@ -122,15 +122,11 @@ export function renderOrderSummary() {
 
       const quantityValue = Number(document.querySelector(`.js-quantity-input-${productId}`).value);
       updateQuantity(productId, quantityValue);
-      document.querySelector(`.js-quantity-${productId}`).innerHTML = quantityValue;
-      updateCartQuantity();
+      renderOrderSummary();
+      renderPaymentSummary();
+      renderCheckoutHeader();
     });
   });
-
-  function updateCartQuantity() {
-    const cartQuantity = calculateCartQuantity();
-    document.querySelector('.js-checkout-quantity').innerHTML = cartQuantity;
-  };
 
   document.querySelectorAll('.js-delivery-option').forEach((element) => {
     element.addEventListener('click', () => {
